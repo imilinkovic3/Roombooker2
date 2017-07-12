@@ -2,7 +2,7 @@
   (:require [roombooker2.layout :as layout]
             [compojure.core :refer [defroutes GET POST]]
             [ring.util.http-response :as response]
-            [roombooker.db.core :as db]))
+            [roombooker2.db.core :as db]))
 
 (defn home-page []
   (layout/render
