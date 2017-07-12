@@ -1,21 +1,28 @@
--- name: create-user!
--- creates a new user record
-INSERT INTO users
-(id, first_name, last_name, email, pass)
-VALUES (:id, :first_name, :last_name, :email, :pass)
+-- name: save-reservation!
+-- creates a new reservation
+INSERT INTO reservation
+( employeeName, roomName, meetingName, start, end)
+VALUES (:employeeName, :roomName, :meetingName, :start, :end)
 
--- name: update-user!
--- update an existing user record
-UPDATE users
-SET first_name = :first_name, last_name = :last_name, email = :email
+-- name: update-reservation!
+-- update an existing reservation
+UPDATE reservation
+SET employeeName = :employeeName, roomName = :roomName, meetingName = :meetingName, start = :start, end = :end
 WHERE id = :id
 
--- name: get-user
--- retrieve a user given the id.
-SELECT * FROM users
+-- name: get-one-reservation
+-- retrieve a reservation given the id.
+SELECT * FROM reservation
 WHERE id = :id
 
--- name: delete-user!
--- delete a user given the id
-DELETE FROM users
+-- name: get-all-reservations
+-- retrieve all reservations
+SELECT * FROM reservation
+
+-- name: delete-reservation!
+-- delete a reservation given the id
+DELETE FROM reservation
 WHERE id = :id
+
+
+
