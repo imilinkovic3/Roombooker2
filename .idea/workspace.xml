@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62a01785-4b9a-4c0c-929c-094c5a202036" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/css/screen.css" afterPath="$PROJECT_DIR$/resources/public/css/screen.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/base.html" afterPath="$PROJECT_DIR$/resources/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clj/roombooker2/routes/home.clj" afterPath="$PROJECT_DIR$/src/clj/roombooker2/routes/home.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/addReservation.html" afterPath="$PROJECT_DIR$/resources/templates/addReservation.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -80,8 +77,8 @@
       <file leaf-file-name="addReservation.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/templates/addReservation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+            <state relative-caret-position="823">
+              <caret line="38" column="6" lean-forward="false" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -738,12 +735,12 @@
       <workItem from="1499891280850" duration="2511000" />
       <workItem from="1499929249938" duration="79000" />
       <workItem from="1499929352415" duration="231000" />
-      <workItem from="1499958048193" duration="903000" />
+      <workItem from="1499958048193" duration="1280000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3724000" />
+    <option name="totallyTimeSpent" value="4101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1929" y="-9" width="1938" height="1098" extended-state="6" />
@@ -985,8 +982,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/addReservation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="823">
+          <caret line="38" column="6" lean-forward="false" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
           <folding />
         </state>
       </provider>
