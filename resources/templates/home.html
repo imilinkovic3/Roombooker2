@@ -1,14 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
   <div class="jumbotron">
-    <h1>Welcome to roombooker2</h1>
-    <p>Time to start building your site!</p>
-    <p><a class="btn btn-primary btn-lg" href="http://luminusweb.net">Learn more &raquo;</a></p>
+    <h1>Welcome to Roombooker</h1>
   </div>
 
-  <div class="row">
-    <div class="span12">
-    {{docs|markdown}}
-    </div>
-  </div>
+<div class="container">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Employee</th>
+      <th>Room</th>
+      <th>Meeting</th>
+      <th>Start</th>
+      <th>End</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for item in reservations %}
+    <tr>
+      <th>{{item.employeename}}</th>
+      <th>{{item.roomname}}</th>
+      <th>{{item.meetingname}}</th>
+      <th>{{item.start}}</th>
+      <th>{{item.end}}</th>
+    </tr>
+    {% endfor %}
+
+    </tbody>
+  </table>
+</div>
 {% endblock %}
