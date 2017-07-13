@@ -53,4 +53,22 @@
 
 
 
+<script>
+    $(document).ready(function () {
+        $('.delete-form').submit(function (event) {
+            console.log("*****************************************************");
+            if (!confirm('Are you sure that you want to delete this reservation?')) {
+                event.preventDefault();
+            }
+        });
+
+    });
+
+
+
+</script>
+
+
+
+
 {% endblock %}

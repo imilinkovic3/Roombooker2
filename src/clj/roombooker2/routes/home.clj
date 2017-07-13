@@ -11,6 +11,10 @@
 (defn about-page []
   (layout/render "about.html"))
 
+(defn delete-reservation! [request]
+                           (db/delete-reservation! (:params request) )
+                           (response/found "/"))
+
 (defn save-reservation! [request]
                          (db/save-reservation! (:params request) )
                          (response/found "/"))
@@ -27,6 +31,7 @@
   (GET "/" [] (home-page))
   (POST "/reservation" request (save-reservation! request))
   (GET "/addreservation" [] (addReservation-page))
+  (POST "/deletereservation" request (delete-reservation! request))
   (GET "/allreservations" [] (allreservations-page))
   (GET "/about" [] (about-page)))
 
