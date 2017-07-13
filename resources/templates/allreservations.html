@@ -49,7 +49,56 @@
 </div>
 
 
+<!--modal update meeting-->
+<div class="modal fade" tabindex="-1" role="dialog" id="changeMeeting">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Change meeting details:</h4>
+            </div>
+            <form method="POST" action="/updatereservation" id="updateMeetingForm">
+                <div class="form-group">
+                    {% csrf-field %}
+                    <input type="hidden" name="id"/>
 
+                    Meeting name:
+                    <input class="form-control"
+                           type="text"
+                           name="meetingName"/>
+                    Employee:
+                    <input class="form-control"
+                           type="text"
+                           name="employeeName"
+                           value=""/>
+                    Room name:
+                    <input class="form-control"
+                           type="text"
+                           name="roomName"/>
+                    Start:
+                    <input class="form-control"
+                           type="date"
+                           name="start"/>
+                    End:
+                    <input class="form-control"
+                           type="date"
+                           name="end"/>
+                </div>
+
+                <div class="modal-footer">
+                    <div class="firstrow">
+                        <input type="submit" class="btn btn-primary" value="Save"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
 
 
 
