@@ -1,10 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+    <h1>Welcome to Roombooker</h1>
+</div>
 
-</body>
-</html>
+<div class="container">
+    <table class="table" id="table_reservations">
+        <thead>
+        <tr>
+            <th style="display: none">Id</th>
+            <th>Employee</th>
+            <th>Room</th>
+            <th>Meeting</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Update reservation</th>
+            <th>Delete reservation</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in reservations %}
+        <tr>
+            <td style="display:none" class="save_id">{{item.id}}</td>
+            <td class="save_employeeName">{{item.employeename}}</td>
+            <td class="save_roomName">{{item.roomname}}</td>
+            <td class="save_meetingName">{{item.meetingname}}</td>
+            <td class="save_start">{{item.start}}</td>
+            <td class="save_end">{{item.end}}</td>
+            <td class="centerBtn">
+                <!--<form  class="update-form">-->
+                <!--{% csrf-field %}-->
+                <button type="submit" id="updateReservation" class="your-class button-width">Update</button>
+                <!--</form>-->
+            </td>
+            <td class="centerBtn">
+                <form action="/deletereservation" method="post" class="delete-form reservation_form ">
+                    {% csrf-field %}
+                    <input type="hidden" name="id" value="{{item.id}}"/>
+                    <button class="button-width" type="submit">Delete</button>
+                </form>
+            </td>
+
+        </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+{% endblock %}
