@@ -18,10 +18,16 @@
 (defn addReservation-page []
     (layout/render "addReservation.html"))
 
+(defn allreservations-page []
+(println (db/get-all-reservations))
+  (layout/render
+    "allreservations.html" {:reservations (db/get-all-reservations)}))
+
 (defroutes home-routes
   (GET "/" [] (home-page))
   (POST "/reservation" request (save-reservation! request))
   (GET "/addreservation" [] (addReservation-page))
+  (GET "/allreservations" [] (allreservations-page))
   (GET "/about" [] (about-page)))
 
 
