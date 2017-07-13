@@ -21,6 +21,7 @@
 (defroutes home-routes
   (GET "/" [] (home-page))
   (POST "/reservation" request (save-reservation! request))
+  (GET "/addreservation" [] (addReservation-page))
   (GET "/about" [] (about-page)))
 
 
