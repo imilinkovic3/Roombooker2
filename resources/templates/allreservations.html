@@ -111,6 +111,48 @@
             }
         });
 
+        var updateMeetingForm = $('#updateMeetingForm');
+
+        $('.your-class').click(function () {
+
+            var id = $(this).closest('tr')
+                            .find('.save_id')
+                            .text();
+            var employeeName = $(this).closest('tr')
+                                      .find('.save_employeeName')
+                                      .text();
+            var roomName = $(this).closest('tr')
+                                  .find('.save_roomName')
+                                  .text();
+            var meetingName = $(this).closest("tr")
+                                     .find(".save_meetingName")
+                                     .text();
+            var start = $(this).closest("tr")
+                               .find(".save_start")
+                               .text();
+            var end = $(this).closest("tr")
+                             .find(".save_end")
+                             .text();
+
+            var id_field     = updateMeetingForm.find('input[name="id"]');
+            var roomName_field     = updateMeetingForm.find('input[name="roomName"]');
+            var meetingName_field   = updateMeetingForm.find('input[name="meetingName"]');
+            var employeeName_field  = updateMeetingForm.find('input[name="employeeName"]');
+            var start_field         = updateMeetingForm.find('input[name="start"]');
+            var end_field           = updateMeetingForm.find('input[name="end"]');
+
+            id_field.val(id);
+            roomName_field.val(roomName);
+            meetingName_field.val(meetingName);
+            employeeName_field.val(employeeName);
+            start_field.val(start);
+            end_field.val(end);
+
+            $('#changeMeeting').modal({
+                backdrop: false
+            });
+        });
+
     });
 
 

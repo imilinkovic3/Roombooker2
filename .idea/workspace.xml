@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="62a01785-4b9a-4c0c-929c-094c5a202036" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/allreservations.html" afterPath="$PROJECT_DIR$/resources/templates/allreservations.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clj/roombooker2/routes/home.clj" afterPath="$PROJECT_DIR$/src/clj/roombooker2/routes/home.clj" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,21 +35,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.clj" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.clj" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/clj/roombooker2/routes/home.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+            <state relative-caret-position="696">
+              <caret line="38" column="2" lean-forward="false" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allreservations.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="allreservations.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/templates/allreservations.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="823">
-              <caret line="100" column="6" lean-forward="false" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
+            <state relative-caret-position="367">
+              <caret line="134" column="37" lean-forward="true" selection-start-line="134" selection-start-column="37" selection-end-line="134" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#!!top" expanded="true" />
@@ -139,9 +140,9 @@
         <option value="$PROJECT_DIR$/resources/templates/addReservation.html" />
         <option value="$PROJECT_DIR$/resources/templates/home.html" />
         <option value="$PROJECT_DIR$/resources/templates/about.html" />
-        <option value="$PROJECT_DIR$/src/clj/roombooker2/routes/home.clj" />
         <option value="$PROJECT_DIR$/resources/templates/base.html" />
         <option value="$PROJECT_DIR$/resources/templates/allreservations.html" />
+        <option value="$PROJECT_DIR$/src/clj/roombooker2/routes/home.clj" />
       </list>
     </option>
   </component>
@@ -751,12 +752,12 @@
       <workItem from="1499891280850" duration="2511000" />
       <workItem from="1499929249938" duration="79000" />
       <workItem from="1499929352415" duration="231000" />
-      <workItem from="1499958048193" duration="4549000" />
+      <workItem from="1499958048193" duration="5268000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7370000" />
+    <option name="totallyTimeSpent" value="8089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1929" y="-9" width="1938" height="1098" extended-state="6" />
@@ -1012,14 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/roombooker2/routes/home.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1248">
@@ -1030,12 +1023,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/allreservations.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="823">
-          <caret line="100" column="6" lean-forward="false" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
+        <state relative-caret-position="367">
+          <caret line="134" column="37" lean-forward="true" selection-start-line="134" selection-start-column="37" selection-end-line="134" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/roombooker2/routes/home.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="38" column="2" lean-forward="false" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>

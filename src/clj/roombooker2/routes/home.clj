@@ -15,6 +15,10 @@
                            (db/delete-reservation! (:params request) )
                            (response/found "/"))
 
+(defn update-reservation! [request]
+                           (db/update-reservation! (:params request) )
+                           (response/found "/"))
+
 (defn save-reservation! [request]
                          (db/save-reservation! (:params request) )
                          (response/found "/"))
@@ -32,6 +36,7 @@
   (POST "/reservation" request (save-reservation! request))
   (GET "/addreservation" [] (addReservation-page))
   (POST "/deletereservation" request (delete-reservation! request))
+  (POST "/updatereservation" request (update-reservation! request))
   (GET "/allreservations" [] (allreservations-page))
   (GET "/about" [] (about-page)))
 
